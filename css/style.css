@@ -3,4 +3,84 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+}
+
+body {
+  background-color: #dfe4bb;
+  text-decoration: none;
+}
+body #nav ul {
+  display: inline-flex;
+  float: right;
+  list-style-type: none;
+}
+body #nav ul li {
+  padding: 1.5em;
+  font-family: "Montserrat", serif;
+  font-weight: 700;
+  font-size: 1.25em;
+}
+body #nav ul li a {
+  text-decoration: none;
+  color: #c79665;
+}
+body #nav ul li a:hover {
+  color: #afb98e;
+}
+body img {
+  width: 80%;
+  padding: 3em;
+  display: block;
+  margin: 0 auto 0 auto;
+}
+body #about {
+  width: 80%;
+  display: block;
+  margin: 4em auto 4em auto;
+  padding: 2em;
+  background-color: #e5d9b9;
+  border-radius: 3em;
+  border: 1.25em double #afb98e;
+}
+body #about p {
+  font-family: "Sour Gummy", serif;
+  color: #c79665;
+  font-size: 1.5em;
+  margin: 1em;
+}
+body #form {
+  width: 80%;
+  display: block;
+  margin: 4em auto 4em auto;
+  padding: 2em;
+  background-color: #e5d9b9;
+  border-radius: 3em;
+  border: 1.25em double #afb98e;
+  font-family: "Sour Gummy", serif;
+  color: #c79665;
+  font-size: 1.5em;
+}
+body #form form {
+  display: grid;
+  align-items: center;
+}
+body #form form label {
+  padding-top: 1em;
+}
+body #form form input {
+  height: 2em;
+}
+body #form form textarea {
+  height: 8em;
+  width: 100%;
+}
+body #form form .bttn {
+  margin-top: 1em;
+  font-family: "Montserrat", serif;
+  font-weight: 700;
+  font-size: 1em;
+  color: #c79665;
+  background-color: #dfe4bb;
+  border: 0.25em solid #afb98e;
+  border-radius: 1em;
 }/*# sourceMappingURL=style.css.map */

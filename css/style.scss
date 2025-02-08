@@ -9,9 +9,92 @@ $light-brown: #e5d9b9;
 $font-primary: "Sour Gummy", serif;
 $font-secondary: "Montserrat", serif;
 
+@mixin card {
+    width: 80%;
+    display: block;
+    margin: 4em auto 4em auto;
+    padding: 2em;
+    background-color: $light-brown;
+    border-radius: 3em;
+    border: 1.25em double $green;
+}
+
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
+
+body {
+    background-color: $light-green;
+    text-decoration: none;
+    #nav {
+        ul {
+            display: inline-flex;
+            float: right;
+            list-style-type: none;
+            li {
+                padding: 1.5em;
+                font-family: $font-secondary;
+                font-weight: 700;
+                font-size: 1.25em;
+                a {
+                    text-decoration: none;
+                    color: $brown;
+                }
+                a:hover {
+                    color: $green;
+                }
+            }
+        }
+    
+    }
+    img {
+        width: 80%;
+        padding: 3em;
+        display: block;
+        margin: 0 auto 0 auto;
+    }
+    #about {
+        @include card;
+        p {
+            font-family: $font-primary;
+            color: $brown;
+            font-size: 1.5em;
+            margin: 1em;
+        }
+    }
+    #form {
+        @include card;
+        font-family: $font-primary;
+        color: $brown;
+        font-size: 1.5em;
+        form {
+            display: grid;
+            align-items: center;
+            label {
+                padding-top: 1em;
+            }
+            input {
+                height: 2em;
+            }
+            textarea {
+                height: 8em;
+                width: 100%;
+            }
+            .bttn {
+                margin-top: 1em;
+                font-family: $font-secondary;
+                font-weight: 700;
+                font-size: 1em;
+                color: $brown;
+                background-color: $light-green;
+                border: .25em solid $green;
+                border-radius: 1em;
+            }
+        }
+    }
+}
+
+
 
